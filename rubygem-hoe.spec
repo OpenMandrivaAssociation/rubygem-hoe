@@ -12,6 +12,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	ruby-RubyGems
 Requires:	ruby-rake >= 0.8.7 rubygem-gemcutter >= 0.2.1
 Requires:	rubygem-rubyforge >= 2.0.3
+Suggests:	rubygem-hoe >= 1.4.2
 BuildArch:	noarch
 
 %description
