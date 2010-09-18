@@ -2,7 +2,7 @@
 
 Summary:	A rake/rubygems helper for project Rakefiles
 Name:		rubygem-%{oname}
-Version:	2.5.0
+Version:	2.6.2
 Release:	%mkrel 1
 License:	MIT
 Group:		Development/Ruby
@@ -33,8 +33,8 @@ For extra goodness, see: http://seattlerb.rubyforge.org/hoe/Hoe.pdf
 
 %install
 rm -rf %{buildroot}
-gem install --local --install-dir %{buildroot}/%{ruby_gemdir} --force %{SOURCE0}
-mv %{buildroot}%{ruby_gemdir}/bin %{buildroot}%{_prefix}
+gem install -E -n %{buildroot}%{_bindir} --local --install-dir %{buildroot}/%{ruby_gemdir} --force %{SOURCE0}
+rm -rf %{buildroot}%{ruby_gemdir}/{cache,gems/%{oname}-%{version}/ext}
 
 chmod u+w -R %{buildroot}
 
@@ -45,7 +45,5 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc %{ruby_gemdir}/doc/%{oname}-%{version}
 %{_bindir}/sow
-%{ruby_gemdir}/cache/%{oname}-%{version}.gem
 %{ruby_gemdir}/gems/%{oname}-%{version}
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
-
