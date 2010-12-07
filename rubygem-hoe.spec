@@ -3,7 +3,7 @@
 Summary:	A rake/rubygems helper for project Rakefiles
 Name:		rubygem-%{oname}
 Version:	2.6.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	MIT
 Group:		Development/Ruby
 URL:		http://%{oname}.rubyforge.org/
@@ -12,7 +12,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	ruby-RubyGems
 Requires:	ruby-rake >= 0.8.7 rubygem-gemcutter >= 0.2.1
 Requires:	rubygem-rubyforge >= 2.0.3
-Suggests:	rubygem-hoe >= 1.4.2
+Provides:	rubygem(%{oname}) = %{version}
 BuildArch:	noarch
 
 %description
