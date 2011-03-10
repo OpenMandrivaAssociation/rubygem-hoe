@@ -2,8 +2,8 @@
 
 Summary:	A rake/rubygems helper for project Rakefiles
 Name:		rubygem-%{oname}
-Version:	2.6.2
-Release:	%mkrel 2
+Version:	2.9.1
+Release:	%mkrel 1
 License:	MIT
 Group:		Development/Ruby
 URL:		http://%{oname}.rubyforge.org/
