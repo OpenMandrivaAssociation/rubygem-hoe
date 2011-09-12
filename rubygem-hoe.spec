@@ -22,6 +22,7 @@ Requires:	rubygem(rubyforge) >= 2.0.4
 Requires:	rubygem(rake)	>= 0.8.7
 #Requires:	rubygem(minitest) >= 1.7.0
 BuildRequires:	rubygems >= 1.3.6
+BuildRequires:	ruby-rdoc
 # % % check
 BuildRequires:	rubygem(minitest)
 BuildRequires:	rubygem(rake)
