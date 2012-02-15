@@ -1,4 +1,4 @@
-# Generated from hoe-2.13.0.gem by gem2rpm5 -*- rpm-spec -*-          
+# Generated from hoe-2.13.0.gem by gem2rpm5 -*- rpm-spec -*-
 %define	rbname	hoe
 
 Summary:	Hoe is a rake/rubygems helper for project Rakefiles
@@ -39,11 +39,7 @@ Documents, RDoc & RI documentation for %{name}.
 %gem_build
 
 %install
-rm -rf %{buildroot}
 %gem_install
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/sow
