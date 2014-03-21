@@ -3,15 +3,15 @@
 
 Summary:	Hoe is a rake/rubygems helper for project Rakefiles
 Name:		rubygem-%{rbname}
-
-Version:	2.13.1
+Version:	3.10.0
 Release:	1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
-URL:		https://github.com/seattlerb/hoe
+Url:		https://github.com/seattlerb/hoe
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
-BuildRequires:	rubygems >= 1.4
+Source100:	%{name}.rpmlintrc
 BuildArch:	noarch
+BuildRequires:	rubygems >= 1.4
 
 %description
 Hoe is a rake/rubygems helper for project Rakefiles. It helps you
@@ -56,45 +56,3 @@ Documents, RDoc & RI documentation for %{name}.
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.txt
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
 
-
-%changelog
-* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.13.1-1
-+ Revision: 774438
-- clean out some old junk
-- new version
-
-* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.13.0-2
-+ Revision: 774161
-- mass rebuild of ruby packages against ruby 1.9.1
-
-* Fri Jan 27 2012 Alexander Khrukin <akhrukin@mandriva.org> 2.13.0-1
-+ Revision: 769347
-- version update 2.13.0
-
-* Mon Sep 12 2011 Alexander Barakin <abarakin@mandriva.org> 2.9.4-1
-+ Revision: 699540
-- missing rdoc fix
-- imported package rubygem-hoe
-
-* Thu Mar 10 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.9.1-1
-+ Revision: 643499
-- regenerate spec with gem2rpm5
-- new release: 2.9.1
-
-* Tue Dec 07 2010 Rémy Clouard <shikamaru@mandriva.org> 2.6.2-2mdv2011.0
-+ Revision: 614533
-- remove useless suggests and add corresponding provides
-
-* Sat Sep 18 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.6.2-1mdv2011.0
-+ Revision: 579407
-- new release: 2.6.2
-- don't install gem archive
-- add minitest to suggests
-
-* Wed Feb 03 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.5.0-1mdv2010.1
-+ Revision: 500390
-- import rubygem-hoe
-
-
-* Mon Feb  3 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.3.0-1
-- initial release
