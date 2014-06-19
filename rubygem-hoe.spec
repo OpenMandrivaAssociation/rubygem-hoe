@@ -3,15 +3,14 @@
 
 Summary:	Hoe is a rake/rubygems helper for project Rakefiles
 Name:		rubygem-%{rbname}
-Version:	3.10.0
+Version:	3.12.0
 Release:	1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 Url:		https://github.com/seattlerb/hoe
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
-Source100:	%{name}.rpmlintrc
-BuildArch:	noarch
 BuildRequires:	rubygems >= 1.4
+BuildArch:	noarch
 
 %description
 Hoe is a rake/rubygems helper for project Rakefiles. It helps you
@@ -55,4 +54,5 @@ Documents, RDoc & RI documentation for %{name}.
 %files doc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.txt
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
+%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.rdoc
 
