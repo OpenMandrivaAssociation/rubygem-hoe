@@ -4,7 +4,7 @@
 Summary:	Hoe is a rake/rubygems helper for project Rakefiles
 Name:		rubygem-%{rbname}
 Version:	3.12.0
-Release:	1
+Release:	2
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 Url:		https://github.com/seattlerb/hoe
